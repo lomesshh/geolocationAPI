@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/G2xqzrdD/post-complaint.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+        padding: 20px 20px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+        margin-bottom: 30px;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 20px !important;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.ui {
+    background-color: #333;
+    padding: 30px;
+    margin-top: 50px;  
+    opacity: 0.8;
+}
+.ui label{
+    color: #fff;
+}
+
+.ui h1{
+    color: #fff;
+    font-family: cursive;
+}
+
+.inputfield
+ {  
+ position:relative;  
+ top:30px;  
+ width:900px;  
+ line-height: 60px!important;  
+ }
+       

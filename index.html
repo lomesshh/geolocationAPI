@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complaint Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="geolocation.js"></script>
+
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+    <body>
+       
+        <div class="container">
+            
+           <div class="row">
+               
+               <div class="col-log-3"></div>
+               
+               <div class="col-log-6">
+                   <div class="ui">
+                       <h1 class="text-center" style="color: #d250fe;">POST COMPLAINT HERE</h1><br>
+                       <form class="form-group text-center">
+                           <div class="row">
+                               <div class="col-lg-6">
+                                   <label>Fisrt Name :</label>
+                                   <input type="text" name="first name" class="form-control" required="required" placeholder="Enter your First name">
+                               </div>
+                               <div class="col-lg-6">
+                                   <label>Last Name :</label>
+                                   <input type="text" name="last name" class="form-control" required="required" placeholder="Enter your Last name">
+                               </div>
+                            </div>
+                           
+                           <br>
+                              <div class="row">
+                               <div class="col-lg-6">
+                                   <label>Mobile Number :</label>
+                                   <input type="tel" name="number" class="form-control" required="required" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10" placeholder="Enter your Mobile Number">
+                               </div>
+                               <div class="col-lg-6">
+                                   <label>E-mail :</label>
+                                   <input type="email" name="email" class="form-control" required="required" placeholder="Enter your Email">
+                               </div>
+                            </div>   
+                     <br>
+                      <label>Complaint Type :</label>
+                           <select class="form-control" name="complaint type">
+                               <option >Choose Complaint Type</option>
+                               <option value="">Street light</option>
+                               <option value="">Sanitation</option>
+                               <option value="">Pot Holes</option>
+                               <option value="">CCTV</option>
+                               <option value="">Footpath</option>
+                               <option value="">Garbage</option>
+                               <option value="">Speed breaker</option>
+                               <option value="">Open Manholes</option>
+                               <option value="">Pipe Leakage</option>
+
+                           </select>
+                           <br>
+                           <label>Describe Your Complaint :</label>
+                                <textarea class="form-control" type="textarea" required="required" name="explanation" id="comments" placeholder="Describe..." maxlength="6000" rows="4"></textarea>
+                           <br>
+                           <label for="imageFile">Select some images:</label>
+	                   <input type="file" id="imageFile" name="img file" class="form-control" accept="image/*" multiple>
+                           <br>
+                           <button onclick="getLocation()" type="button" style="background-color: #d250fe;" class="btn btn-primary btn-block btn-lg">Get Your Location</button><br>
+                           <div class="row">
+                               <div class="col-lg-6">
+                                   <label>Latitude :</label>
+                                   <input type="text" id="latValue" required="required" name="latitude" class="form-control">
+                               </div>
+                               <div class="col-lg-6">
+                                   <label>Longitude :</label>
+                                   <input type="text" id="longValue" required="required" name="longitude" class="form-control">
+                               </div>
+                            </div>
+                           <p id="demo"></p>
+                           <br>
+                           <input type="submit" style="background-color: #d250fe;" name="submit" value="submit" class="btn btn-primary btn-block btn-lg">
+                       </form>
+                    </div> 
+               </div>
+           </div>
+        </div>
+    </body>
+</html>
